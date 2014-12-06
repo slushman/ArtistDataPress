@@ -1,0 +1,142 @@
+/* ArtistDataPress Page Styling */
+
+@import "vars";
+
+#slushman_adp {
+	overflow: hidden;
+	margin: 1em 0 5em;
+}
+
+.artistdatapress-widget  {
+	overflow: hidden;
+}
+
+.slushman_adp_text_field {
+	min-width: 25em;
+	width: 70%;
+}
+
+.slushman_adp_layout_choice {
+	overflow: hidden;
+}
+
+.slushman_adp_radio {
+	margin: 1px !important;
+}
+
+.slushman_adp_margtop {
+	margin-top: 25px;
+	max-width: 76em;
+	min-width: 50em;
+}
+
+.adp_footer {
+	line-height: $bigtext;
+	font-size: 1.1em;
+}
+
+.adp_more {
+	@include halvsies;
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.adp_artistdata_link {
+	@include halvsies;
+	float: right;
+}
+
+.adp_artistdata_logo_link {
+	float: right;
+}
+
+
+
+/* ADP Support */
+
+.adp_support {
+	overflow: hidden;
+	width: 100%;
+}
+
+.adp_paypal {
+	@include links;
+}
+
+.adp_links {
+	@include links;
+	
+	a {
+		display: block;
+		font-size: $bigtext;
+		line-height: $bigtext;		
+	}
+}
+
+.slushman_links {
+	@include links;
+	
+	a {
+		@include awesomefont;
+		font-size: 3.25em;
+		margin: .25em;
+	}
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: 	url('../fonts/fontawesome-webfont.eot?v=3.0.1');
+  src: 	url('../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+    	url('../fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+    	url('../fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Universal Widget Styling */
+
+#widgets #slushman_adp {
+	margin: 0;
+}
+
+.adp_w_shows {
+	list-style: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.adp_w_links, 
+.adp_w_no_shows {
+	list-style: none outside none !important;
+	margin-top: 5%;
+}
+
+.adp_w_artistdata_link {
+	display: inline;
+}
+
+.adp_w_more {
+	font-size: .9em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.adp_w_artistdata_logo_link {
+	float: right;
+	width: 140px;
+}
+
+.adp_w_show {
+	overflow: hidden;
+	margin-bottom: $bigtext;	
+}
+
+
+
+@import "classic";
+@import "classicwidget";
+@import "ical";
+@import "icalwidget";

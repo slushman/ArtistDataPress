@@ -1,0 +1,135 @@
+/* iCal Widget Layout Styling */
+
+.adp_w_ical_date_time {
+	display: block;
+	text-align: center;
+	background-color: red;
+	overflow: hidden;
+	font-size: 1.5em;
+	line-height: 2em;
+	color: white;
+	margin-bottom: 1em;
+
+	@media screen and (min-width: 650px) {
+		float: left;
+		width: 23%;
+		background: none;
+		font-size: 1em;
+	}
+}
+
+.adp_w_ical_bg {
+	display: inline;
+	float: left;
+	margin-left: .25em;
+
+	@media screen and (min-width: 650px) {
+		background-color: red;
+		margin: 0;
+		width: 100%;
+	}
+
+	.adp_w_ical_month {
+		font-weight: bold;
+
+		@media screen and (min-width: 650px) {
+			color: #ffffff;
+			display: block;
+			font-size: .85em;
+		}
+	}
+
+	.adp_w_ical_date {
+
+		@media screen and (min-width: 650px) {
+			background-color: #ffffff;
+			color: #000000;
+			display: block;
+			font-size: 1.5em;
+			font-weight: bold;
+			line-height: 1.1em;
+			margin: 0 auto .3em;
+			padding: .1em;
+			width: 2em;
+		}
+	}
+}
+
+.adp_w_ical_day {
+	display: none;
+
+	@media screen and (min-width: 650px) {
+		display: block;
+		color: #000000;
+		font-size: .85em;
+	}
+}
+
+.adp_w_ical_time {
+	display: inline;
+	float: right;
+	margin-right: .25em;
+
+	@media screen and (min-width: 650px) {
+		display: block;
+		color: #000000;
+		font-size: .85em;
+		float: none;
+		margin: 0;
+	}
+}
+
+.adp_w_ical_show_info {
+	font-size: 1.25em;
+	padding: 0 .25em;
+
+	@media screen and (min-width: 650px) {
+		float: left;
+		margin-left: 0.5em;
+		font-size: inherit;
+		padding: 0;
+		width: 74%;
+	}
+
+	span {
+		margin: .75em 0;
+		display: block;
+		width: 100%;
+
+		@media screen and (min-width: 650px) {
+			margin: .5em 0;
+		}
+	}
+
+	.adp_w_ical_venue_location {
+
+		.adp_w_ical_show_city,
+		.adp_w_ical_show_state,
+		.adp_w_ical_show_country {
+			display: inline;
+		}
+
+		.adp_w_ical_map_marker {
+			display: inline;
+			font-family: 'FontAwesome';
+			text-decoration: none;
+		}
+	}
+
+}
+
+.adp_w_ical_description p {
+	margin: 0px;
+}
+
+.adp_w_ical_address {
+
+	@media screen and (min-width: 650px) {
+		display: block;
+		font-size: 1.2em;
+	}
+}
+
+.adp_w_ical_topline {
+	margin-top: 0 !important;
+}

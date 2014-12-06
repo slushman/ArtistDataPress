@@ -1,0 +1,34 @@
+/* Classic Widget Layout Styling */
+
+.adp_w_classic_show {
+	margin-bottom: 1em;
+	font-size: 1.25em;
+	
+	@media screen and (min-width: 650px) { 
+		font-size: inherit;
+	}
+	
+	div {
+		@include classicwidgetline;
+	}
+}
+
+.adp_w_date_time {
+	background-color: $headerbg;
+}
+
+.adp_w_classic_map,
+.adp_w_classic_age,
+.adp_w_classic_tickets,
+.adp_w_footer {
+	@include classicwidgetline;
+}
+
+.adp_w_classic_venue_location {
+	@include classicwidgetline;
+	display: inline;
+}
+
+.adp_w_classic_map_marker {
+	@include awesomefont;
+}

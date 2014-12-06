@@ -1,0 +1,65 @@
+/* Classic Template Styling */
+
+.adp_classic_show {
+	font-size: 1.2em !important;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+	
+	@media screen and (min-width: 650px) {
+		font-size: 1em !important;
+	}
+	
+}
+
+.adp_classic_row1 {
+	background: $headerbg;
+	font-weight: bold;
+	line-height: 1.75em;
+	@include classic_row;
+}
+
+.adp_classic_row2,
+.adp_classic_row3 {
+	@include classic_row;
+}
+
+.adp_classic_date_cell,
+.adp_classic_age_cell,
+.adp_classic_tix_cell {
+	@include classic_cell;
+	
+	@media screen and (min-width: 650px) {
+		@include classic_column1;
+	}
+}
+
+.adp_classic_venue_cell,
+.adp_classic_showname_cell,
+.adp_classic_description_cell {
+	@include classic_cell;
+	
+	@media screen and (min-width: 650px) {
+		@include classic_column2;
+	}
+}
+
+.adp_classic_location_cell,
+.adp_classic_phone_cell {
+	@include classic_cell;
+	
+	@media screen and (min-width: 650px) {
+		@include classic_column3;
+	}
+}
+
+.adp_classic_map {
+	text-decoration: none;
+}
+
+.adp_classic_map_marker {
+	@include awesomefont;
+}
+
+.adp_classic_showname {
+	padding: 0 !important;
+}

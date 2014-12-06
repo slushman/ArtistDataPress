@@ -1,0 +1,129 @@
+/* iCal Layout Styling */
+
+.adp_ical_show {
+	font-size: $mobtext;
+	margin-bottom: $bigtext;
+	overflow: hidden;
+	
+	@media screen and (min-width: 650px) {
+		font-size: 1em;
+	}
+}
+
+.adp_ical_date_time {
+	@include ical_icon;
+	@include ical_pad;
+	
+	@media screen and (min-width: 650px) {
+		@include ical_inner_icon;
+		font-weight: normal;
+		float: left;
+		width: 3.7em;
+		text-align: center;
+	}
+}
+
+.adp_ical_bg {
+	
+	@media screen and (min-width: 650px) {
+		@include ical_icon;
+		overflow: hidden;
+		float: left;
+		width: 100%;
+		padding: .3em;
+		box-sizing: border-box;
+	}
+}
+
+.adp_ical_day {
+	display: none;
+	
+	@media screen and (min-width: 650px) {
+		@include ical_time;
+	}
+}
+
+.adp_ical_month {
+	float: left;
+	margin-right: .2em;
+	font-weight: bold;
+	
+	@media screen and (min-width: 650px) {
+		@include ical_date;
+		font-size: $smalltext;
+	}
+}
+
+.adp_ical_date {
+	float: left;
+	
+	@media screen and (min-width: 650px) {
+		@include ical_date;
+		@include ical_inner_icon;
+		width: 1.7em;
+		font-size: $bigtext !important;
+		padding: .1em;
+		box-sizing: border-box;
+	}
+}
+
+.adp_ical_time {
+	float: right;
+	
+	@media screen and (min-width: 650px) {
+		@include ical_time;
+	}
+}
+
+.adp_ical_map_marker {
+	@include awesomefont;
+}
+
+.adp_ical_show_info {
+	@include ical_pad;
+}
+
+.adp_ical_row1,
+.adp_ical_row2 {
+	overflow: hidden;
+}
+
+.adp_ical_row1 {
+	font-size: $bigtext;
+	line-height: $bigtext;
+}
+
+.adp_ical_row3,
+.adp_ical_row4 {
+	margin: .75em 0;
+	overflow: hidden;
+	
+	@media screen and (min-width: 650px) {
+		margin: .5em 0;
+	}
+}
+
+.adp_ical_description p {
+	@include ical_row_reset;
+}
+
+.adp_ical_venue_location,
+.adp_ical_venue_phone {
+	@include ical_venue;
+}
+
+.adp_ical_locphone_sep {
+	@include ical_venue;
+	display: none;
+}
+
+.adp_ical_age,
+.adp_ical_tickets {
+	@include ical_agetix;
+}
+
+.adp_ical_agetix_sep {
+	@include ical_agetix;
+	display: none;
+	margin: 0 50px;
+}

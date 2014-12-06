@@ -1,0 +1,505 @@
+/* ArtistDataPress Page Styling */
+/* Variables and mixins */
+#slushman_adp {
+  overflow: hidden;
+  margin: 1em 0 5em; }
+
+.artistdatapress-widget {
+  overflow: hidden; }
+
+.slushman_adp_text_field {
+  min-width: 25em;
+  width: 70%; }
+
+.slushman_adp_layout_choice {
+  overflow: hidden; }
+
+.slushman_adp_radio {
+  margin: 1px !important; }
+
+.slushman_adp_margtop {
+  margin-top: 25px;
+  max-width: 76em;
+  min-width: 50em; }
+
+.adp_footer {
+  line-height: 1.5em;
+  font-size: 1.1em; }
+
+.adp_more {
+  padding: 0.5%;
+  width: 49%;
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.adp_artistdata_link {
+  padding: 0.5%;
+  width: 49%;
+  float: right; }
+
+.adp_artistdata_logo_link {
+  float: right; }
+
+/* ADP Support */
+.adp_support {
+  overflow: hidden;
+  width: 100%; }
+
+.adp_paypal {
+  float: left;
+  margin: 1em 5em; }
+
+.adp_links {
+  float: left;
+  margin: 1em 5em; }
+  .adp_links a {
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.5em; }
+
+.slushman_links {
+  float: left;
+  margin: 1em 5em; }
+  .slushman_links a {
+    font-family: 'FontAwesome';
+    text-decoration: none;
+    font-size: 3.25em;
+    margin: .25em; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=3.0.1");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Universal Widget Styling */
+#widgets #slushman_adp {
+  margin: 0; }
+
+.adp_w_shows {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.adp_w_links,
+.adp_w_no_shows {
+  list-style: none outside none !important;
+  margin-top: 5%; }
+
+.adp_w_artistdata_link {
+  display: inline; }
+
+.adp_w_more {
+  font-size: .9em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.adp_w_artistdata_logo_link {
+  float: right;
+  width: 140px; }
+
+.adp_w_show {
+  overflow: hidden;
+  margin-bottom: 1.5em; }
+
+/* Classic Template Styling */
+.adp_classic_show {
+  font-size: 1.2em !important;
+  margin-bottom: 1.5em;
+  overflow: hidden; }
+  @media screen and (min-width: 650px) {
+    .adp_classic_show {
+      font-size: 1em !important; } }
+
+.adp_classic_row1 {
+  background: #e6e6e6;
+  font-weight: bold;
+  line-height: 1.75em;
+  overflow: hidden; }
+
+.adp_classic_row2,
+.adp_classic_row3 {
+  overflow: hidden; }
+
+.adp_classic_date_cell,
+.adp_classic_age_cell,
+.adp_classic_tix_cell {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding: .25em .5em;
+  box-sizing: border-box; }
+  .adp_classic_date_cell p,
+  .adp_classic_age_cell p,
+  .adp_classic_tix_cell p {
+    margin: 0; }
+  @media screen and (min-width: 650px) {
+    .adp_classic_date_cell,
+    .adp_classic_age_cell,
+    .adp_classic_tix_cell {
+      text-align: left; } }
+  @media screen and (min-width: 650px) {
+    .adp_classic_date_cell,
+    .adp_classic_age_cell,
+    .adp_classic_tix_cell {
+      width: 27%; } }
+
+.adp_classic_venue_cell,
+.adp_classic_showname_cell,
+.adp_classic_description_cell {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding: .25em .5em;
+  box-sizing: border-box; }
+  .adp_classic_venue_cell p,
+  .adp_classic_showname_cell p,
+  .adp_classic_description_cell p {
+    margin: 0; }
+  @media screen and (min-width: 650px) {
+    .adp_classic_venue_cell,
+    .adp_classic_showname_cell,
+    .adp_classic_description_cell {
+      text-align: left; } }
+  @media screen and (min-width: 650px) {
+    .adp_classic_venue_cell,
+    .adp_classic_showname_cell,
+    .adp_classic_description_cell {
+      width: 48%; } }
+
+.adp_classic_location_cell,
+.adp_classic_phone_cell {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding: .25em .5em;
+  box-sizing: border-box; }
+  .adp_classic_location_cell p,
+  .adp_classic_phone_cell p {
+    margin: 0; }
+  @media screen and (min-width: 650px) {
+    .adp_classic_location_cell,
+    .adp_classic_phone_cell {
+      text-align: left; } }
+  @media screen and (min-width: 650px) {
+    .adp_classic_location_cell,
+    .adp_classic_phone_cell {
+      width: 25%; } }
+
+.adp_classic_map {
+  text-decoration: none; }
+
+.adp_classic_map_marker {
+  font-family: 'FontAwesome';
+  text-decoration: none; }
+
+.adp_classic_showname {
+  padding: 0 !important; }
+
+/* Classic Widget Layout Styling */
+.adp_w_classic_show {
+  margin-bottom: 1em;
+  font-size: 1.25em; }
+  @media screen and (min-width: 650px) {
+    .adp_w_classic_show {
+      font-size: inherit; } }
+  .adp_w_classic_show div {
+    box-sizing: border-box;
+    padding: .2em;
+    display: block;
+    margin: .5em; }
+    @media screen and (min-width: 650px) {
+      .adp_w_classic_show div {
+        margin: 0 !important; } }
+
+.adp_w_date_time {
+  background-color: #e6e6e6; }
+
+.adp_w_classic_map,
+.adp_w_classic_age,
+.adp_w_classic_tickets,
+.adp_w_footer {
+  box-sizing: border-box;
+  padding: .2em;
+  display: block;
+  margin: .5em; }
+  @media screen and (min-width: 650px) {
+    .adp_w_classic_map,
+    .adp_w_classic_age,
+    .adp_w_classic_tickets,
+    .adp_w_footer {
+      margin: 0 !important; } }
+
+.adp_w_classic_venue_location {
+  box-sizing: border-box;
+  padding: .2em;
+  display: block;
+  margin: .5em;
+  display: inline; }
+  @media screen and (min-width: 650px) {
+    .adp_w_classic_venue_location {
+      margin: 0 !important; } }
+
+.adp_w_classic_map_marker {
+  font-family: 'FontAwesome';
+  text-decoration: none; }
+
+/* iCal Layout Styling */
+.adp_ical_show {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  overflow: hidden; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_show {
+      font-size: 1em; } }
+
+.adp_ical_date_time {
+  background-color: red;
+  color: white;
+  padding: .25em;
+  overflow: hidden;
+  box-sizing: border-box; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_date_time {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      font-weight: normal;
+      float: left;
+      width: 3.7em;
+      text-align: center; } }
+
+@media screen and (min-width: 650px) {
+  .adp_ical_bg {
+    background-color: red;
+    color: white;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    padding: .3em;
+    box-sizing: border-box; } }
+
+.adp_ical_day {
+  display: none; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_day {
+      display: inherit;
+      float: none;
+      font-size: 0.85em; } }
+
+.adp_ical_month {
+  float: left;
+  margin-right: .2em;
+  font-weight: bold; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_month {
+      margin: 0 auto;
+      display: block;
+      float: none;
+      font-size: 0.85em; } }
+
+.adp_ical_date {
+  float: left; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_date {
+      margin: 0 auto;
+      display: block;
+      float: none;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      width: 1.7em;
+      font-size: 1.5em !important;
+      padding: .1em;
+      box-sizing: border-box; } }
+
+.adp_ical_time {
+  float: right; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_time {
+      display: inherit;
+      float: none;
+      font-size: 0.85em; } }
+
+.adp_ical_map_marker {
+  font-family: 'FontAwesome';
+  text-decoration: none; }
+
+.adp_ical_show_info {
+  padding: .25em;
+  overflow: hidden;
+  box-sizing: border-box; }
+
+.adp_ical_row1,
+.adp_ical_row2 {
+  overflow: hidden; }
+
+.adp_ical_row1 {
+  font-size: 1.5em;
+  line-height: 1.5em; }
+
+.adp_ical_row3,
+.adp_ical_row4 {
+  margin: .75em 0;
+  overflow: hidden; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_row3,
+    .adp_ical_row4 {
+      margin: .5em 0; } }
+
+.adp_ical_description p {
+  margin: 0;
+  display: inherit;
+  float: left; }
+
+.adp_ical_venue_location,
+.adp_ical_venue_phone {
+  line-height: 1.75em;
+  font-size: 1.2em;
+  display: block; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_venue_location,
+    .adp_ical_venue_phone {
+      line-height: 2em;
+      display: inline; } }
+
+.adp_ical_locphone_sep {
+  line-height: 1.75em;
+  font-size: 1.2em;
+  display: block;
+  display: none; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_locphone_sep {
+      line-height: 2em;
+      display: inline; } }
+
+.adp_ical_age,
+.adp_ical_tickets {
+  line-height: 1.75em;
+  font-size: 1.2em;
+  display: block; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_age,
+    .adp_ical_tickets {
+      line-height: 1.2em;
+      font-size: 1em;
+      display: inline; } }
+
+.adp_ical_agetix_sep {
+  line-height: 1.75em;
+  font-size: 1.2em;
+  display: block;
+  display: none;
+  margin: 0 50px; }
+  @media screen and (min-width: 650px) {
+    .adp_ical_agetix_sep {
+      line-height: 1.2em;
+      font-size: 1em;
+      display: inline; } }
+
+/* iCal Widget Layout Styling */
+.adp_w_ical_date_time {
+  display: block;
+  text-align: center;
+  background-color: red;
+  overflow: hidden;
+  font-size: 1.5em;
+  line-height: 2em;
+  color: white;
+  margin-bottom: 1em; }
+  @media screen and (min-width: 650px) {
+    .adp_w_ical_date_time {
+      float: left;
+      width: 23%;
+      background: none;
+      font-size: 1em; } }
+
+.adp_w_ical_bg {
+  display: inline;
+  float: left;
+  margin-left: .25em; }
+  @media screen and (min-width: 650px) {
+    .adp_w_ical_bg {
+      background-color: red;
+      margin: 0;
+      width: 100%; } }
+  .adp_w_ical_bg .adp_w_ical_month {
+    font-weight: bold; }
+    @media screen and (min-width: 650px) {
+      .adp_w_ical_bg .adp_w_ical_month {
+        color: #ffffff;
+        display: block;
+        font-size: .85em; } }
+  @media screen and (min-width: 650px) {
+    .adp_w_ical_bg .adp_w_ical_date {
+      background-color: #ffffff;
+      color: #000000;
+      display: block;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.1em;
+      margin: 0 auto .3em;
+      padding: .1em;
+      width: 2em; } }
+
+.adp_w_ical_day {
+  display: none; }
+  @media screen and (min-width: 650px) {
+    .adp_w_ical_day {
+      display: block;
+      color: #000000;
+      font-size: .85em; } }
+
+.adp_w_ical_time {
+  display: inline;
+  float: right;
+  margin-right: .25em; }
+  @media screen and (min-width: 650px) {
+    .adp_w_ical_time {
+      display: block;
+      color: #000000;
+      font-size: .85em;
+      float: none;
+      margin: 0; } }
+
+.adp_w_ical_show_info {
+  font-size: 1.25em;
+  padding: 0 .25em; }
+  @media screen and (min-width: 650px) {
+    .adp_w_ical_show_info {
+      float: left;
+      margin-left: 0.5em;
+      font-size: inherit;
+      padding: 0;
+      width: 74%; } }
+  .adp_w_ical_show_info span {
+    margin: .75em 0;
+    display: block;
+    width: 100%; }
+    @media screen and (min-width: 650px) {
+      .adp_w_ical_show_info span {
+        margin: .5em 0; } }
+  .adp_w_ical_show_info .adp_w_ical_venue_location .adp_w_ical_show_city,
+  .adp_w_ical_show_info .adp_w_ical_venue_location .adp_w_ical_show_state,
+  .adp_w_ical_show_info .adp_w_ical_venue_location .adp_w_ical_show_country {
+    display: inline; }
+  .adp_w_ical_show_info .adp_w_ical_venue_location .adp_w_ical_map_marker {
+    display: inline;
+    font-family: 'FontAwesome';
+    text-decoration: none; }
+
+.adp_w_ical_description p {
+  margin: 0px; }
+
+@media screen and (min-width: 650px) {
+  .adp_w_ical_address {
+    display: block;
+    font-size: 1.2em; } }
+
+.adp_w_ical_topline {
+  margin-top: 0 !important; }

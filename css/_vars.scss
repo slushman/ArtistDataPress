@@ -1,0 +1,135 @@
+/* Variables and mixins */
+
+$headerbg: #E6E6E6;
+$icalbg: red;
+$bigtext: 1.5em;
+$mobtext: 1.2em;
+$smalltext: .85em;
+
+@mixin awesomefont {
+	font-family: 'FontAwesome';
+	text-decoration: none;
+}
+
+@mixin halvsies {
+	padding: 0.5%;
+	width: 49%;
+}
+
+@mixin links {
+	float: left;
+	margin: 1em 5em;
+}
+
+@mixin classic_cell {
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	padding: .25em .5em;
+	box-sizing: border-box;
+	
+	p {
+		margin: 0;
+	}
+	
+	@media screen and (min-width: 650px) {
+		text-align: left;
+	}
+}
+
+@mixin classic_column1 {
+	width: 27%;
+}
+
+@mixin classic_column2 {
+	width: 48%;
+}
+
+@mixin classic_column3 {
+	width: 25%;
+}
+
+@mixin classic_row {
+	overflow: hidden;
+}
+
+@mixin classicwidgetline() {
+	box-sizing: border-box;
+	padding: .2em;
+	display: block;
+	margin: .5em;
+	
+	@media screen and (min-width: 650px) { 
+		margin: 0 !important;
+	}
+	
+}
+
+@mixin ical_pad {
+	padding: .25em;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+@mixin ical_icon {
+	background-color: $icalbg;
+	color: white;
+}
+
+@mixin ical_inner_icon {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+}
+
+@mixin ical_date {
+	margin: 0 auto;
+	display: block;
+	float: none;
+}
+
+@mixin ical_time {
+	display: inherit;
+	float: none;
+	font-size: $smalltext;
+}
+
+@mixin ical_separate {
+	display: block;
+	overflow: hidden;	
+}
+
+@mixin ical_row {
+	margin: .5em 0;
+	@include ical_separate;
+}
+
+@mixin ical_row_reset {
+	margin: 0;
+	display: inherit;
+	float: left;
+}
+
+@mixin ical_venue {
+	line-height: 1.75em;
+	font-size: $mobtext;
+	display: block;
+	
+	@media screen and (min-width: 650px) {
+		line-height: 2em;
+		display: inline;
+	}
+}
+
+@mixin ical_agetix {
+	line-height: 1.75em;
+	font-size: $mobtext;
+	display: block;
+	
+	@media screen and (min-width: 650px) {
+		line-height: $mobtext;
+		font-size: 1em;
+		display: inline;
+	}
+}
