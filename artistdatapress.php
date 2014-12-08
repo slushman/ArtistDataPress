@@ -659,11 +659,13 @@ if ( !class_exists( "ArtistDataPress_Plugin" ) ) { //Start Class
  */
 		function layout_preference_field() {
 			
-			$choices 	= array( 'Custom', 'Classic', 'iCal' );
+			$choices 	= array( /*'Custom', */'Classic', 'iCal' );
 			$i 			= 0; ?>
 			
-			<fieldset><legend class="screen-reader-text"><span><?php _e('Layout') ?></span></legend><?php
-			
+			<fieldset><legend class="screen-reader-text"><span><?php _e('Layout') ?></span></legend>
+
+			<p class="custom_desc">If want to customize your show template beyond the plugin options, please check out the <a href="http://slushman.com/plugins/artistdatapress/artistdatapress-template-codex/">documentation</a>.</p><p>&nbsp;</p><?php
+
 			foreach ( $choices as $choice ) { ?>
 
 				<div class="slushman_adp_layout_choice <?php if ( $i > 0 ) { echo 'slushman_adp_margtop'; } ?>">
@@ -672,15 +674,7 @@ if ( !class_exists( "ArtistDataPress_Plugin" ) ) { //Start Class
 						<span><?php echo $choice; ?></span>
 					</label><br /><br /><?php
 
-					if ( $choice == 'Custom' ) {
-
-						//$this-
-
-					} else {
-
-						$this->get_adp_layout( array( 'layout' => $choice, 'limit' => 3, 'source' => 'plugsets' ) );
-
-					} // End of custom check
+					$this->get_adp_layout( array( 'layout' => $choice, 'limit' => 3, 'source' => 'plugsets' ) );
 					
 				?></div><!-- End of Layout Demo --><?php
 				

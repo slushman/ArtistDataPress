@@ -95,7 +95,9 @@ See my [link] (http://slushman.com/plugins/artistdatapress/artistdatapress-templ
 = 0.72 =
 BUG FIX: Resolved the "undefined function get_example_data()" error
 BUG FIX: Removed the transient caching - causing too many errors and complaints
+* Removed "Custom" template option; added custom template explanation instead.
 * Changed Twitter account info
+* Added plugin icon to assets
 
 = 0.71 =
 BUG FIX: Removed a file, but didn't remove the inclusion of said file. Fixed.
